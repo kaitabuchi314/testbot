@@ -26,6 +26,6 @@ if (move) {
   const { row, col } = move;
   return [row, col, row, col];
 } else {
-  // If no valid move is available, return null
-  return null;
+  // If no valid move is available, return [0, 0, 0, 0] (invalid move)
+  return [0, 0, 0, 0];
 }
